@@ -1,0 +1,8 @@
+
+{
+ :datomic {:dbs {:wolf-cal {:url           "datomic:mem://wolf-cal"
+                            :schema        "wolf-cal.migrations"
+                            :auto-migrate  true
+                            :auto-drop     true
+                            :seed-function wolf-cal.wolf-cal-data/seed-wolf-cal}}}
+ :port    3000}
